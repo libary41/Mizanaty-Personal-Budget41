@@ -1,0 +1,374 @@
+/* =========================
+   الإعدادات العامة
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f2;
+    color: #30352f;
+    line-height: 1.6;
+}
+
+/* =========================
+   رأس الموقع
+========================= */
+
+header {
+    background-color: #526b4f;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 6px 0 0;
+    font-size: 15px;
+}
+
+/* =========================
+   القائمة الرئيسية
+========================= */
+
+nav {
+    background-color: white;
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e2e6df;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+nav a {
+    display: inline-block;
+
+    color: #526b4f;
+    background-color: #f1f5ef;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 9px 16px;
+    margin: 4px;
+
+    border-radius: 8px;
+    border: 1px solid #e1e8de;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #526b4f;
+    color: white;
+    border-color: #526b4f;
+}
+
+/* الصفحة الحالية */
+
+nav a.active {
+    background-color: #526b4f;
+    color: white;
+    border-color: #526b4f;
+}
+
+/* =========================
+   المحتوى
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* =========================
+   العناوين
+========================= */
+
+h2 {
+    color: #526b4f;
+    margin-top: 0;
+}
+
+h3 {
+    color: #657c61;
+}
+
+/* =========================
+   الأقسام والنماذج
+========================= */
+
+section,
+form {
+    background-color: white;
+
+    padding: 22px;
+    margin-bottom: 22px;
+
+    border-radius: 12px;
+    border: 1px solid #e2e5df;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+   الحقول
+========================= */
+
+label {
+    display: block;
+
+    font-weight: bold;
+    margin-top: 10px;
+
+    color: #444b43;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 600px;
+
+    padding: 11px;
+    margin-top: 6px;
+
+    border: 1px solid #ccd2c8;
+    border-radius: 7px;
+
+    background-color: #fafbf9;
+
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #526b4f;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   الأزرار
+========================= */
+
+button {
+    background-color: #526b4f;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 22px;
+    margin-top: 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #3f563d;
+}
+
+/* =========================
+   الجداول
+========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background-color: white;
+
+    border: 1px solid #dfe5dc;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* رأس الجدول */
+
+th {
+    background-color: #526b4f;
+
+    color: white;
+
+    padding: 13px 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border: none;
+}
+
+/* خلايا الجدول */
+
+td {
+    padding: 12px 10px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e8ece6;
+
+    color: #3f443d;
+}
+
+/* الصفوف بالتناوب */
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9f6;
+}
+
+/* عند مرور الماوس */
+
+tbody tr:hover {
+    background-color: #eaf1e8;
+}
+
+/* آخر صف */
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+   أزرار الجداول
+========================= */
+
+table button {
+    margin: 2px;
+
+    padding: 6px 11px;
+
+    font-size: 12px;
+
+    border-radius: 6px;
+}
+
+/* زر التعديل */
+
+.edit-btn {
+    background-color: #71856d;
+}
+
+.edit-btn:hover {
+    background-color: #596d55;
+}
+
+/* زر الحذف */
+
+.delete-btn {
+    background-color: #b85c5c;
+}
+
+.delete-btn:hover {
+    background-color: #963f3f;
+}
+
+/* =========================
+   الروابط
+========================= */
+
+a {
+    color: #526b4f;
+}
+
+/* =========================
+   تذييل الموقع
+========================= */
+
+footer {
+    background-color: #526b4f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   صفحة تسجيل الدخول
+========================= */
+
+.login-page main {
+    max-width: 480px;
+    margin-top: 45px;
+}
+
+.login-page main form {
+    text-align: right;
+}
+
+/* =========================
+   صفحة إنشاء الحساب
+========================= */
+
+.register-page main {
+    max-width: 550px;
+    margin-top: 35px;
+}
+
+/* =========================
+   الهاتف
+========================= */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 94%;
+    }
+
+    nav a {
+        display: block;
+
+        width: 90%;
+
+        margin: 5px auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+    }
+
+    table button {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
