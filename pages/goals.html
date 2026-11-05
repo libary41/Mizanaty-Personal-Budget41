@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ميزانيتي - الأهداف والتقارير</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/menu.js" defer></script>
 </head>
 
 <body>
 
 <header>
 
-    <h1>ميزانيتي</h1>
+    <div class="header-inner">
+        <h1>ميزانيتي</h1>
+    </div>
 
-    <nav>
-        <a href="home.html">الرئيسية</a> |
-        <a href="transactions.html">المعاملات والميزانية</a> |
-        <a href="goals.html">الأهداف والتقارير</a> |
-        <a href="contact.html">تواصل معنا</a> |
-        <a href="index.html">تسجيل الخروج</a>
-    </nav>
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة"
+            aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+    </button>
 
 </header>
+
+<nav id="main-nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="transactions.html">المعاملات والميزانية</a>
+        <a href="goals.html" class="active">الأهداف والتقارير</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="../index.html">تسجيل الخروج</a>
+</nav>
 
 <main>
 

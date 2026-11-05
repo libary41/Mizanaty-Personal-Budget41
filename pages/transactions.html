@@ -7,46 +7,33 @@
 
     <title>ميزانيتي - المعاملات والميزانية</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/menu.js" defer></script>
 </head>
 
 <body>
 
 <header>
 
-    <h1>ميزانيتي</h1>
+    <div class="header-inner">
+        <h1>ميزانيتي</h1>
+        <p>إدارة المعاملات والميزانية الشخصية</p>
+    </div>
 
-    <p>إدارة المعاملات والميزانية الشخصية</p>
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة"
+            aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+    </button>
 
 </header>
 
-
-<!-- القائمة الرئيسية -->
-
-<nav>
-
-    <a href="home.html">
-        الرئيسية
-    </a>
-
-    <a href="transactions.html" class="active">
-        المعاملات والميزانية
-    </a>
-
-    <a href="goals.html">
-        الأهداف والتقارير
-    </a>
-
-    <a href="contact.html">
-        تواصل معنا
-    </a>
-
-    <a href="index.html">
-        تسجيل الخروج
-    </a>
-
+<nav id="main-nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="transactions.html" class="active">المعاملات والميزانية</a>
+        <a href="goals.html">الأهداف والتقارير</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="../index.html">تسجيل الخروج</a>
 </nav>
-
 
 <main>
 
